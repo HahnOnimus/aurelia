@@ -14,21 +14,6 @@ const products = [
         paymentLink: "https://paystack.com/pay/npt1p9k2ec"
     },
     {
-        id: 2,
-        name: "Lagos Business Leads Goldmine",
-        description: "Unlock 1,000+ verified business leads in Lagos. Perfect for B2B sales teams aiming to expand rapidly, this exclusive list helps you connect faster, close smarter, and dominate your niche. Whether you're launching campaigns or nurturing pipelines, this data gives you the edge to reach top-level executives, pitch your offer, and grow your network in one of Africa’s most competitive business cities—no guesswork, just results. If you need more data up to 100,000 in Nigeria, contact us.",
-        price: 25000,
-        old: 70000,
-        discount: 64,
-        images: [
-            "products-images/1kleads-1.png",
-            "products-images/1kleads-2.png",
-            "products-images/1kleads-3.png"
-        ],
-        paymentLink: "https://paystack.com/pay/h3yk3vbq9z"
-        
-    },
-    {
         id: 3,
         name: "eCommerce Pro",
         description: "Unlock the ultimate eCommerce experience with a one-time purchase for life! This powerful platform is fully loaded — multi-language with RTL support, guest checkout, single-page checkout, unlimited products, categories, and variations. Whether you're selling simple items or complex bundles, it’s built to scale with color swatches, wishlists, built-in order tracking, and more. Integrated with top payment gateways like PayPal, Stripe, Paystack, and Mollie, plus multi-currency support. Fast, SEO-optimized, responsive, and beautifully themed with drag-and-drop components. Get free installation help, blazing speed, advanced permissions, and Amazon S3-ready media hosting—zero hassle, total control.",
@@ -41,20 +26,6 @@ const products = [
             "products-images/store-3.jpeg"
         ],
         paymentLink: "https://paystack.com/pay/t8a0i62u1v"
-    },
-    {
-        id: 4,
-        name: "USA Business Leads Database",
-        description: "Access a network of over 10,000 vetted business contacts across the USA, ready for your outreach initiatives. This extensive database includes verified company information, key decision-maker details, and essential industry data, allowing you to focus your efforts on the right prospects. Perfect for sales teams, marketers, and business developers looking to drive growth, increase engagement, and achieve measurable results with precision and efficiency. If you need more data up to 100,000 in the USA, contact us.",
-        price: 60000,
-        old: 200000,
-        discount: 70,
-        images: [
-            "products-images/100kleads-1.png",
-            "products-images/100kleads-2.png",
-            "products-images/100kleads-3.png"
-        ],
-        paymentLink: "https://paystack.com/pay/etcks0i4ls"
     },
     {
         id: 5,
