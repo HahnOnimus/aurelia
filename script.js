@@ -256,7 +256,7 @@ function toggleSidebar() {
 // Countdown timer
 function startCountdown() {
     const currentYear = new Date().getFullYear();
-    const countDownDate = new Date(currentYear, 4, 25); 
+    const countDownDate = new Date(currentYear, 4, 30); 
     
     if (countDownDate < new Date()) {
         countDownDate.setFullYear(currentYear + 1);
