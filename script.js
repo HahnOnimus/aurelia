@@ -100,14 +100,14 @@ function loadTestimonials() {
         {
             name: "Ajoke Biola",
             role: " Badore Ferry Terminal, Badore, Ajah, Lagos, Nigeria",
-            text: "The Lagos Business Leads Goldmine is FIRE! Closed 12 high-ticket clients in 3 weeks using the contacts.",
+            text: "The Leads Generator Desktop App is FIRE! Closed 12 high-ticket clients in 3 weeks using the automated lead generation.",
             rating: 5,
             avatar: "images/test-4.jpg" // Replace with your image path
         },
         {
             name: "Mitchell Rose.",
             role: "Granville Island, Vancouver, British Columbia, Canada.",
-            text: "The USA Business Leads Database is a sales team’s dream. We filtered 100K leads by industry and hit a 22% conversion rate. ROI? 15x in 60 days!",
+            text: "With the Multi-Channel Outreach Platform, our campaign response rates doubled in just 2 weeks!",
             rating: 4,
             avatar: "images/test-5.jpeg" // Replace with your image path
         }

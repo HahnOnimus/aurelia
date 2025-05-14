@@ -17,6 +17,11 @@
             <img src="images/logo.png" alt="Aurelia Logo" class="logo">
             <span class="logo-text">Aurelia</span>
         </div>
+        <div>
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-arrow-left"></i> back
+            </a>
+        </div>
     </header>
 
     <!-- Main Content -->
@@ -25,6 +30,7 @@
             <div class="main-image-container">
                 <img id="main-image" src="" alt="Main product image">
                 <span class="discount-badge" id="discount-badge">0% OFF</span>
+                <div class="product-ribbon">Premium</div>
             </div>
             <div class="thumbnail-container" id="thumbnail-container">
                 <!-- Thumbnails will be inserted here by JavaScript -->
@@ -32,12 +38,55 @@
         </div>
 
         <div class="product-info">
-            <h1 id="product-name">Product Name</h1>
+            <div class="product-header">
+                <h1 id="product-name">Product Name</h1>
+                <div class="product-meta">
+                    <div class="rating">
+                        <div class="stars">
+                            <!-- Stars will be filled by JavaScript -->
+                        </div>
+                        <span class="rating-count">(0 reviews)</span>
+                    </div>
+                    <div class="stats">
+                        <span class="stat"><i class="fas fa-heart"></i> <span class="likes-count">0</span></span>
+                        <span class="stat"><i class="fas fa-download"></i> <span class="downloads-count">0</span></span>
+                    </div>
+                </div>
+            </div>
+
             <div class="price-container">
                 <span class="old-price" id="old-price">₦0</span>
                 <span class="current-price" id="current-price">₦0</span>
+                <span class="price-savings">You save ₦0</span>
             </div>
 
+            <!-- Trust badges -->
+            <div class="trust-badges">
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Secure Payment</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 Support</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Verified Product</span>
+                </div>
+            </div>
+
+            <!-- Quick action buttons -->
+            <div class="quick-actions">
+                <button class="action-btn wishlist-btn">
+                    <i class="far fa-heart"></i> Wishlist
+                </button>
+                <button class="action-btn share-btn">
+                    <i class="fas fa-share-alt"></i> Share
+                </button>
+            </div>
+
+            <!-- Product details sections -->
             <div class="section">
                 <h2><i class="fas fa-info-circle"></i> Description</h2>
                 <p id="full-description">Product description will appear here.</p>
@@ -71,12 +120,70 @@
                 </ul>
             </div>
 
-            <a href="#" id="buy-now-btn" class="cta-btn">
-                <i class="fas fa-shopping-cart"></i> Buy Now
-            </a>
+            <!-- Testimonials preview -->
+            <div class="testimonials-preview">
+                <h3><i class="fas fa-quote-left"></i> Customer Feedback</h3>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "This product transformed my business! The features are exactly as described and the support was excellent."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/test-1.png" alt="Customer" class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">Emmanuel T.</span>
+                            <span class="author-role">Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="view-all-testimonials">View All Reviews</button>
+            </div>
+
+            <!-- FAQ section -->
+            <div class="section faq-section">
+                <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does installation take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Installation typically takes 24-48 hours after purchase confirmation. In rare cases it may take up to 72 hours if we encounter technical issues.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is there any recurring fee?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        No, all our products are one-time purchases with lifetime access. There are no hidden fees or recurring charges.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We accept all major credit/debit cards and bank transfers through our secure Paystack payment gateway.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final CTA with urgency elements -->
+            <div class="final-cta">
+                <a id="buy-now-btn" class="cta-btn">
+                    <i class="fas fa-shopping-cart"></i>Get Lifetime Access
+                </a>
+                <div class="secure-checkout">
+                    <i class="fas fa-lock"></i>
+                    <span>Secure checkout powered by Paystack</span>
+                </div>
+            </div>
         </div>
     </main>
 
+ 
     <script src="products.js"></script>
     <script src="product-details.js"></script>
 </body>

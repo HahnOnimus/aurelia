@@ -16,7 +16,7 @@ const products = [
             "We design and develop your website based on your specific requirements",
             "You provide content, branding assets, and any special requests",
             "We implement responsive design that works perfectly on all devices",
-            "SEO optimization is included to help with search engine visibility",
+            "Search Engine Optimization (SEO) is included to help with search engine visibility",
             "One-time setup with lifetime usage - no recurring fees"
         ],
         advantages: [
@@ -36,12 +36,44 @@ const products = [
         price: 250000,
         old: 400000,
         discount: 38,
+        rating: 4.7,
+        ratingCount: 142,
+        downloads: 1280,
+        likes: 356,
+        featured: true,
+        tags: ["web", "design", "business"],
         images: [
             "products-images/website-1.jpeg",
             "products-images/website-2.jpeg",
             "products-images/website-3.jpeg"
         ],
-        paymentLink: "https://paystack.com/pay/npt1p9k2ec"
+        paymentLink: "https://paystack.com/pay/npt1p9k2ec",
+        testimonials: [
+            {
+                name: "Emmanuel T.",
+                role: "Business Owner",
+                text: "The Premium Website Package saved my business! Our online bookings tripled in a month. 10/10!",
+                rating: 5,
+                avatar: "images/test-1.png"
+            },
+            {
+                name: "Sarah K.",
+                role: "Freelance Designer",
+                text: "Beautiful design and excellent support. My portfolio has never looked better!",
+                rating: 4,
+                avatar: "images/test-2.jpeg"
+            }
+        ],
+        faqs: [
+            {
+                question: "How long does website setup take?",
+                answer: "Typically 3-5 business days after receiving all required materials from you."
+            },
+            {
+                question: "Can I update the content myself?",
+                answer: "Yes, we provide training on how to update your content through an easy-to-use interface."
+            }
+        ]
     },
     {
         id: 3,
@@ -79,12 +111,37 @@ const products = [
         price: 400000,
         old: 750000,
         discount: 47,
+        rating: 4.9,
+        ratingCount: 89,
+        downloads: 920,
+        likes: 412,
+        featured: true,
+        tags: ["ecommerce", "store", "business"],
         images: [
             "products-images/store-1.jpeg",
             "products-images/store-2.jpeg",
             "products-images/store-3.jpeg"
         ],
-        paymentLink: "https://paystack.com/pay/t8a0i62u1v"
+        paymentLink: "https://paystack.com/pay/t8a0i62u1v",
+        testimonials: [
+            {
+                name: "Bryan Philips",
+                role: "eCommerce Entrepreneur",
+                text: "I run 3 stores with eCommerce Pro. The automated inventory system alone saved me $8K in lost sales last quarter!",
+                rating: 5,
+                avatar: "images/test-3.jpeg"
+            }
+        ],
+        faqs: [
+            {
+                question: "What payment gateways are supported?",
+                answer: "We support Paystack, Flutterwave, Stripe, and PayPal integration."
+            },
+            {
+                question: "Can I migrate my existing store?",
+                answer: "Yes, we offer migration services for most popular platforms."
+            }
+        ]
     },
     {
         id: 5,
@@ -122,12 +179,27 @@ const products = [
         price: 380000,
         old: 720000,
         discount: 47,
+        rating: 4.6,
+        ratingCount: 76,
+        downloads: 680,
+        likes: 289,
+        featured: false,
+        tags: ["food", "delivery", "restaurant"],
         images: [
             "products-images/food-1.jpeg",
             "products-images/food-2.jpeg",
             "products-images/food-3.jpeg"
         ],
-        paymentLink: "https://paystack.com/pay/8n-ct4tse7"
+        paymentLink: "https://paystack.com/pay/8n-ct4tse7",
+        testimonials: [
+            {
+                name: "Chef Adeola",
+                role: "Restaurant Owner",
+                text: "FoodExpress cut our order errors by 80% and increased our delivery radius profitably!",
+                rating: 5,
+                avatar: "images/test-4.jpg"
+            }
+        ]
     },
     {
         id: 6,
@@ -165,12 +237,27 @@ const products = [
         price: 600000,
         old: 1500000,
         discount: 60,
+        rating: 4.8,
+        ratingCount: 53,
+        downloads: 420,
+        likes: 198,
+        featured: true,
+        tags: ["ai", "automation", "productivity"],
         images: [
             "products-images/agent-1.jpeg",
             "products-images/agent-2.jpeg",
             "products-images/agent-3.jpeg"
         ],
-        paymentLink: "https://paystack.com/pay/pxcj0vh53i"
+        paymentLink: "https://paystack.com/pay/pxcj0vh53i",
+        testimonials: [
+            {
+                name: "Tunde O.",
+                role: "Operations Manager",
+                text: "The AI agent handles 80% of our customer inquiries, freeing our team for complex issues!",
+                rating: 5,
+                avatar: "images/test-5.jpeg"
+            }
+        ]
     },
     {
         id: 7,
@@ -208,12 +295,27 @@ const products = [
         price: 350000,
         old: 850000,
         discount: 58,
+        rating: 4.5,
+        ratingCount: 67,
+        downloads: 510,
+        likes: 231,
+        featured: false,
+        tags: ["realestate", "property", "management"],
         images: [
             "products-images/estate-1.jpeg",
             "products-images/estate-2.jpeg",
             "products-images/estate-3.jpeg"
         ],
-        paymentLink: "https://paystack.com/pay/hmb14mc8s1"
+        paymentLink: "https://paystack.com/pay/hmb14mc8s1",
+        testimonials: [
+            {
+                name: "Leila K.",
+                role: "Property Manager",
+                text: "RealEstate Pro cut my paperwork by 80%. Tenant onboarding now takes 10 minutes instead of 2 days!",
+                rating: 4,
+                avatar: "images/test-3.jpeg"
+            }
+        ]
     },
     {
         id: 8,
@@ -251,12 +353,27 @@ const products = [
         price: 320000,
         old: 780000,
         discount: 59,
+        rating: 4.7,
+        ratingCount: 42,
+        downloads: 380,
+        likes: 175,
+        featured: false,
+        tags: ["automotive", "cars", "dealership"],
         images: [
             "products-images/cars-1.jpeg",
             "products-images/cars-2.jpeg",
             "products-images/cars-3.jpeg"
         ],
-        paymentLink: "https://paystack.com/pay/3fhdx-lrbv"
+        paymentLink: "https://paystack.com/pay/3fhdx-lrbv",
+        testimonials: [
+            {
+                name: "Franklin A.",
+                role: "Dealership Owner",
+                text: "Our online sales increased by 65% after implementing AutoDealer. The vehicle showcase is stunning!",
+                rating: 5,
+                avatar: "images/test-4.jpg"
+            }
+        ]
     },
     {
         id: 9,
@@ -294,12 +411,27 @@ const products = [
         price: 450000,
         old: 800000,
         discount: 44,
+        rating: 4.4,
+        ratingCount: 58,
+        downloads: 620,
+        likes: 287,
+        featured: true,
+        tags: ["leads", "marketing", "sales"],
         images: [
             "products-images/scrape-1.png",
             "products-images/scrape-2.png",
             "products-images/scrape-3.png"
         ],
-        paymentLink: "https://paystack.com/pay/8jtp2my05g"
+        paymentLink: "https://paystack.com/pay/8jtp2my05g",
+        testimonials: [
+            {
+                name: "Mitchell Rose",
+                role: "Sales Director",
+                text: "The Leads Generator helped us filter 100K leads by industry and hit a 22% conversion rate!",
+                rating: 4,
+                avatar: "images/test-5.jpeg"
+            }
+        ]
     },
     {
         id: 10,
@@ -337,12 +469,27 @@ const products = [
         price: 350000,
         old: 800000,
         discount: 56,
+        rating: 4.6,
+        ratingCount: 47,
+        downloads: 490,
+        likes: 203,
+        featured: false,
+        tags: ["marketing", "communication", "automation"],
         images: [
             "products-images/market-1.png",
             "products-images/market-2.png",
             "products-images/market-3.png"
         ],
-        paymentLink: "https://paystack.com/pay/sz61fzc8oh"
+        paymentLink: "https://paystack.com/pay/sz61fzc8oh",
+        testimonials: [
+            {
+                name: "Grace L.",
+                role: "Marketing Manager",
+                text: "Our campaign response rates doubled after switching to this multi-channel platform!",
+                rating: 5,
+                avatar: "images/test-1.png"
+            }
+        ]
     },
     {
         id: 11,
@@ -380,12 +527,27 @@ const products = [
         price: 380000,
         old: 750000,
         discount: 49,
+        rating: 4.8,
+        ratingCount: 71,
+        downloads: 580,
+        likes: 312,
+        featured: true,
+        tags: ["crm", "business", "management"],
         images: [
             "products-images/crm-1.png",
             "products-images/crm-2.png",
             "products-images/crm-3.png"
         ],
-        paymentLink: "https://paystack.com/pay/7jbwb8t70d"
+        paymentLink: "https://paystack.com/pay/7jbwb8t70d",
+        testimonials: [
+            {
+                name: "David M.",
+                role: "Sales Director",
+                text: "ClientFlow gave us complete visibility into our sales pipeline. Conversion rates improved by 35%!",
+                rating: 5,
+                avatar: "images/test-2.jpeg"
+            }
+        ]
     },
     {
         id: 12,
@@ -423,11 +585,26 @@ const products = [
         price: 240000,
         old: 480000,
         discount: 50,
+        rating: 4.5,
+        ratingCount: 63,
+        downloads: 510,
+        likes: 198,
+        featured: false,
+        tags: ["inventory", "retail", "management"],
         images: [
             "products-images/inventory-1.jpeg",
             "products-images/inventory-2.jpeg",
             "products-images/inventory-3.jpeg"
         ],
-        paymentLink: "https://paystack.com/pay/n2w8kicfmr"
+        paymentLink: "https://paystack.com/pay/n2w8kicfmr",
+        testimonials: [
+            {
+                name: "Ajoke Biola",
+                role: "Store Manager",
+                text: "StockMaster reduced our inventory discrepancies by 90% and saved us countless hours of manual counting!",
+                rating: 4,
+                avatar: "images/test-4.jpg"
+            }
+        ]
     }
 ];
