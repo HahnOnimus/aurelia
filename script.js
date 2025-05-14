@@ -223,7 +223,7 @@ function renderProducts(productsToShow) {
                 <div class="product-buttons">
                     <button class="preview-btn">
                         <i class="fas fa-eye"></i>
-                        <span>Preview</span>
+                        <span>Details</span>
                     </button>
                     <button class="buy-btn">
                         <i class="fas fa-shopping-cart"></i>
@@ -237,7 +237,9 @@ function renderProducts(productsToShow) {
         const previewBtn = card.querySelector('.preview-btn');
         const buyBtn = card.querySelector('.buy-btn');
         
-        previewBtn.addEventListener('click', () => openProductModal(product));
+        previewBtn.addEventListener('click', () => 
+             window.location.href = `product-details.html?id=${product.id}`
+    );
         buyBtn.addEventListener('click', () => window.open(product.paymentLink, '_blank'));
         
         container.appendChild(card);
