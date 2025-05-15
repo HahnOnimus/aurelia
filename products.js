@@ -76,7 +76,7 @@ const products = [
         ]
     },
     {
-        id: 3,
+        id: 2,
         name: "eCommerce Pro",
         description: "Unlock the ultimate eCommerce experience with a one-time purchase for life!",
         fullDescription: "eCommerce Pro is a complete online store solution that gives you everything you need to sell products online. Unlike monthly subscription platforms, this is a one-time purchase that you own forever. It includes advanced features like inventory management, multiple payment gateways, and marketing tools to help your store succeed.",
@@ -144,7 +144,7 @@ const products = [
         ]
     },
     {
-        id: 5,
+        id: 3,
         name: "FoodExpress Delivery System",
         description: "Run your entire online food or retail business from a single, intelligent dashboard.",
         fullDescription: "The FoodExpress Delivery System is a comprehensive solution for restaurants, caterers, and food businesses looking to streamline their online ordering and delivery operations. It combines ordering, payment processing, delivery management, and customer communication into one powerful platform.",
@@ -202,7 +202,7 @@ const products = [
         ]
     },
     {
-        id: 6,
+        id: 4,
         name: "AI Automation Agent",
         description: "Unlock the power of AI automation, tailored specifically for your business needs.",
         fullDescription: "Our AI Automation Agent is a custom-built solution that automates repetitive tasks in your business, saving you time and increasing efficiency. Whether it's customer service, data processing, or marketing automation, we create a solution tailored to your specific workflow needs.",
@@ -260,7 +260,7 @@ const products = [
         ]
     },
     {
-        id: 7,
+        id: 5,
         name: "RealEstate Pro Management Suite",
         description: "Revolutionize real estate management with a powerful platform built for speed, security, and success.",
         fullDescription: "The RealEstate Pro Management Suite is a complete solution for property managers, real estate agents, and developers. It handles property listings, tenant management, lease tracking, maintenance requests, and financial reporting in one integrated platform.",
@@ -318,7 +318,7 @@ const products = [
         ]
     },
     {
-        id: 8,
+        id: 6,
         name: "AutoDealer Sales & Rental System",
         description: "Rev up your auto marketplace with this cutting-edge platform designed to sell, manage, and monetize like never before.",
         fullDescription: "The AutoDealer Sales & Rental System is a complete solution for car dealerships, rental agencies, and auto marketplaces. It includes vehicle listings, inventory management, customer CRM, and integrated payment processing specifically designed for the automotive industry.",
@@ -376,7 +376,7 @@ const products = [
         ]
     },
     {
-        id: 9,
+        id: 7,
         name: "Leads Generator Desktop App",
         description: "Supercharge your lead generation with a powerful, standalone custom-built app.",
         fullDescription: "The Leads Generator Desktop App is a powerful tool that helps businesses find and qualify leads automatically. It scrapes data from multiple sources, qualifies leads based on your criteria, and organizes them for easy follow-up. Perfect for sales teams, marketers, and business owners looking to grow their customer base.",
@@ -434,7 +434,7 @@ const products = [
         ]
     },
     {
-        id: 10,
+        id: 8,
         name: "Multi-Channel Outreach Platform",
         description: "Easily send mass emails, SMS, and WhatsApp messages with flexible support for multiple file formats.",
         fullDescription: "Our Multi-Channel Outreach Platform allows you to manage all your customer communication channels from one dashboard. Send personalized messages via email, SMS, and WhatsApp with advanced segmentation and automation features. Perfect for marketing campaigns, customer notifications, and business communications.",
@@ -492,7 +492,7 @@ const products = [
         ]
     },
     {
-        id: 11,
+        id: 9,
         name: "ClientFlow CRM Elite",
         description: "Take control of your entire business with this all-in-one powerhouse CRM.",
         fullDescription: "ClientFlow CRM Elite is a comprehensive customer relationship management system designed to help you manage all aspects of your client interactions. From lead capture to project management, invoicing, and support tickets, it's everything you need to streamline your business operations and improve customer relationships.",
@@ -550,7 +550,7 @@ const products = [
         ]
     },
     {
-        id: 12,
+        id: 10,
         name: "StockMaster Inventory Software",
         description: "Set up in minutes and take full control of your inventory with a powerful, all-in-one management system.",
         fullDescription: "StockMaster Inventory Software is a complete solution for businesses that need to track and manage inventory across multiple locations. It includes barcode scanning, low stock alerts, purchase order management, and comprehensive reporting to help you optimize your inventory levels and reduce costs.",
