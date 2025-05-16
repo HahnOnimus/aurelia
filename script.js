@@ -79,35 +79,35 @@ function loadTestimonials() {
         {
             name: "Emmanuel T.",
             role: "Plot 45, Aminu Kano Crescent, Wuse 2, Abuja, Nigeria",
-            text: "The Premium Website Package saved my business! Our online bookings tripled in a month. 10/10!",
+            text: "The Premium Business Package saved my business! Our online bookings tripled in a month. 10/10!",
             rating: 5,
             avatar: "images/test-1.png" // Replace with your image path
         },
         {
             name: "Bryan Philips",
             role: "2410 Maple Ave, Dallas, TX 75201",
-            text: "I run 3 eCommerce stores, and the eCommerce Pro software streamlined everything. The automated inventory system alone saved me $8K in lost sales last quarter. Worth every penny!",
+            text: "I run 3 eCommerce stores, and the SalesPro Package streamlined everything. Worth every penny!",
             rating: 4,
             avatar: "images/test-2.jpeg" // Replace with your image path
         },
         {
             name: "Leila K.",
             role: "728 Elm St, Columbus, OH 43215",
-            text: "RealEstate Pro Management Suite cut my paperwork by 80%. Tenant onboarding now takes 10 minutes instead of 2 days. My team calls it ‘magic software’—no joke!",
+            text: "EstateLux Suite cut my paperwork by 80%. Tenant onboarding now takes 10 minutes instead of 2 days. My team calls it ‘magic software’—no joke!",
             rating: 5,  
             avatar: "images/test-3.jpeg" // Replace with your image path
         },
         {
             name: "Ajoke Biola",
             role: " Badore Ferry Terminal, Badore, Ajah, Lagos, Nigeria",
-            text: "The Leads Generator Desktop App is FIRE! Closed 12 high-ticket clients in 3 weeks using the automated lead generation.",
+            text: "SwiftFlow Network Package is FIRE! Closed 12 high-ticket clients in 3 weeks using the complementary tools provided!",
             rating: 5,
             avatar: "images/test-4.jpg" // Replace with your image path
         },
         {
             name: "Mitchell Rose.",
             role: "Granville Island, Vancouver, British Columbia, Canada.",
-            text: "With the Multi-Channel Outreach Platform, our campaign response rates doubled in just 2 weeks!",
+            text: "With the StockMaster Management System, our warehouses are now more efficiently monitored!",
             rating: 4,
             avatar: "images/test-5.jpeg" // Replace with your image path
         }
