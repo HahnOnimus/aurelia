@@ -406,6 +406,129 @@ section {
     display: none;
 }
 
+
+
+/* Social Media Section */
+.social-section {
+    background-color: var(--white);
+    padding: 40px 20px 80px 20px;
+    text-align: center;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.3) 100%);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover::before {
+    transform: translateX(100%);
+}
+
+.social-icon i {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover i {
+    transform: scale(1.2);
+}
+
+/* Individual social icon colors and effects */
+.tiktok {
+    background-color: #000000;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tiktok:hover {
+    background-color: #FE2C55;
+    box-shadow: 0 8px 25px rgba(254, 44, 85, 0.3);
+}
+
+.instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    box-shadow: 0 5px 20px rgba(195, 42, 163, 0.2);
+}
+
+.instagram:hover {
+    box-shadow: 0 8px 25px rgba(195, 42, 163, 0.4);
+}
+
+/* X icon specific styles */
+.x-icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+.x {
+    background-color: #000000;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.x:hover {
+    background-color: #000000;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Animation for social icons */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.social-icon {
+    animation: float 4s ease-in-out infinite;
+}
+
+.social-icon:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.social-icon:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.social-icon:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+
+
+
 /* Statistics Section */
 .stats-section {
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
@@ -1257,9 +1380,9 @@ section {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
-.product-buttons{
+    .product-buttons{
     padding: 0px 20px 0px 0px;
-}
+    }
     .modal-content {
         width: 95%;
         padding: 20px;
@@ -1321,6 +1444,22 @@ section {
     
     .map-container iframe {
         height: 200px;
+    }
+    .social-container {
+        gap: 20px;
+    }
+    
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    .x-icon {
+        width: 20px;
+        height: 20px;
+    }
+    .social-section {
+        padding: 60px 15px;
     }
 }
 
@@ -1443,6 +1582,26 @@ section {
     
     .sidebar {
         width: 280px;
+    }
+
+    .social-container {
+        gap: 15px;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .social-section {
+        padding: 60px 15px;
+    }
+
+    
+    .x-icon {
+        width: 18px;
+        height: 18px;
     }
 }
 
