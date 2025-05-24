@@ -594,6 +594,7 @@ section {
     text-align: center;
     position: relative;
     overflow: hidden;
+    padding-bottom: 100px;
 }
 
 .stats-section::before {
@@ -778,7 +779,7 @@ section {
     transform: translateX(-50%);
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: var(--secondary);
     color: white;
     border-radius: 50%;
     display: flex;

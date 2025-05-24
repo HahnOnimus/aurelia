@@ -36,19 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Add this new function
-function startBackgroundRotation() {
-    setInterval(() => {
-        // Hide current background
-        bgElements[currentBgIndex].style.opacity = '0';
-        
-        // Calculate next background index
-        currentBgIndex = (currentBgIndex + 1) % bgElements.length;
-        
-        // Show next background
-        bgElements[currentBgIndex].style.opacity = '1';
-    }, bgChangeInterval);
-}
 
 
 
@@ -100,13 +87,6 @@ function toggleTestimonialSheet() {
         loadTestimonials();
     }
 }
-
-
-
-
-
-
-
 
 
 // Testimonials data and rendering
@@ -500,6 +480,24 @@ function initCounterAnimation() {
     animateCounters();
     window.addEventListener('scroll', animateCounters);
 }
+
+
+// Add this new function
+function startBackgroundRotation() {
+    setInterval(() => {
+        // Hide current background
+        bgElements[currentBgIndex].style.opacity = '0';
+        
+        // Calculate next background index
+        currentBgIndex = (currentBgIndex + 1) % bgElements.length;
+        
+        // Show next background
+        bgElements[currentBgIndex].style.opacity = '1';
+    }, bgChangeInterval);
+}
+
+
+
 
 function isElementInViewport(el) {
     if (!el) return false;
