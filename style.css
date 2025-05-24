@@ -101,8 +101,6 @@ section {
 }
 
 
-
-
 .hero-bg::before {
     content: '';
     position: absolute;
@@ -447,6 +445,22 @@ section {
     margin-top: 40px;
     color: var(--gray);
     display: none;
+}
+
+/* Trust Message Styles */
+.trust-message {
+    max-width: 700px;
+    margin: 0 auto 15px;
+    padding: 0 20px;
+    font-size: 0.7rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    font-weight: 400;
+}
+.trust-message strong {
+    color: var(--primary);
+    font-weight: 600;
 }
 
 
