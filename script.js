@@ -14,16 +14,44 @@ let currentImageIndex = 0;
 let currentProductImages = [];
 let autoScrollInterval;
 
+// Add this near the top of the file with other global variables
+let currentBgIndex = 0;
+const bgElements = document.querySelectorAll('.hero-bg');
+const bgChangeInterval = 5000; // 5 seconds between changes
+
+
 // Initialize the page
 document.addEventListener("DOMContentLoaded", () => {
+    
     renderProducts(products);
     setupEventListeners();
     startCountdown();
     initCounterAnimation();
     initScrollingAnnouncement();
+    startBackgroundRotation();
     setTimeout(() => showWelcomeModal(), 3000);
     optimizeScrollingAnnouncement();
+
 });
+
+
+
+// Add this new function
+function startBackgroundRotation() {
+    setInterval(() => {
+        // Hide current background
+        bgElements[currentBgIndex].style.opacity = '0';
+        
+        // Calculate next background index
+        currentBgIndex = (currentBgIndex + 1) % bgElements.length;
+        
+        // Show next background
+        bgElements[currentBgIndex].style.opacity = '1';
+    }, bgChangeInterval);
+}
+
+
+
 
 function setupEventListeners() {
     // Search functionality
@@ -72,6 +100,14 @@ function toggleTestimonialSheet() {
         loadTestimonials();
     }
 }
+
+
+
+
+
+
+
+
 
 // Testimonials data and rendering
 function loadTestimonials() {
@@ -258,7 +294,7 @@ function toggleSidebar() {
 // Countdown timer
 function startCountdown() {
     const currentYear = new Date().getFullYear();
-    const countDownDate = new Date(currentYear, 5, 10); 
+    const countDownDate = new Date(currentYear, 5, 15); 
     
     if (countDownDate < new Date()) {
         countDownDate.setFullYear(currentYear + 1);
