@@ -452,7 +452,7 @@ section {
     max-width: 700px;
     margin: 0 auto 15px;
     padding: 0 20px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     line-height: 1.6;
     color: #555;
     text-align: center;
@@ -590,6 +590,7 @@ section {
 .stats-section {
     background: white;
     color: black;
+    font-size: 12px;
     padding: 10px 0;
     text-align: center;
     position: relative;
@@ -1299,7 +1300,7 @@ section {
 }
 
 .sidebar h2 {
-    color: var(--primary);
+    color: var(--secondary);
     margin-bottom: 20px;
     font-size: 1.8rem;
     text-align: center;
