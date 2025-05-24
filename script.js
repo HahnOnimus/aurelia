@@ -14,11 +14,6 @@ let currentImageIndex = 0;
 let currentProductImages = [];
 let autoScrollInterval;
 
-// Add this near the top of the file with other global variables
-let currentBgIndex = 0;
-const bgElements = document.querySelectorAll('.hero-bg');
-const bgChangeInterval = 5000; // 5 seconds between changes
-
 
 // Initialize the page
 document.addEventListener("DOMContentLoaded", () => {
@@ -28,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     startCountdown();
     initCounterAnimation();
     initScrollingAnnouncement();
-    startBackgroundRotation();
     setTimeout(() => showWelcomeModal(), 3000);
     optimizeScrollingAnnouncement();
 
@@ -495,20 +489,6 @@ function initCounterAnimation() {
     window.addEventListener('scroll', animateCounters);
 }
 
-
-// Add this new function
-function startBackgroundRotation() {
-    setInterval(() => {
-        // Hide current background
-        bgElements[currentBgIndex].style.opacity = '0';
-        
-        // Calculate next background index
-        currentBgIndex = (currentBgIndex + 1) % bgElements.length;
-        
-        // Show next background
-        bgElements[currentBgIndex].style.opacity = '1';
-    }, bgChangeInterval);
-}
 
 
 
