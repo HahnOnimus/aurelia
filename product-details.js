@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
         month: 'long', 
         day: 'numeric' 
     });
-    document.getElementById('current-date').textContent = formattedDate;
+    //document.getElementById('current-date').textContent = formattedDate;
 
 function displayProductDetails(product) {
     // Basic product info
