@@ -57,6 +57,18 @@ section {
     color: var(--gray);
     font-size: 1.1rem;
 }
+
+/* Ensure confetti displays properly */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
 /* Map Container Styles */
 .map-container {
     width: 100%;

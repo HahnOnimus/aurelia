@@ -408,9 +408,23 @@ function showWelcomeModal() {
 }
 
 function closeWelcomeModal() {
+    // Play chime sound
+    const confettiSound = document.getElementById('confetti-sound');
+    confettiSound.play().catch(e => console.log("Sound playback prevented:", e));
+    
+    // Trigger confetti
+    confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#f57c00', '#d4af37', '#ffffff']
+    });
+    
+    // Close modal
     welcomeModal.style.display = 'none';
     document.body.style.overflow = 'auto';
     
+    // Save preference if checked
     if (dontShowCheckbox.checked) {
         localStorage.setItem('hideWelcomeModal', 'true');
     }
