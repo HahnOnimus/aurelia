@@ -461,6 +461,7 @@ canvas {
 #no-products-message {
     text-align: center;
     margin-top: 40px;
+    padding: 10px 20px;
     color: var(--gray);
     display: none;
 }

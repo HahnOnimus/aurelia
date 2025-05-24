@@ -408,9 +408,9 @@ const products = [
             "Risk of stocking expired medications",
             "Inefficient pharmacy operations"
         ],
-        price: 380000,
+        price: 370000,
         old: 750000,
-        discount: 49,
+        discount: 51,
         rating: 4.8,
         ratingCount: 71,
         downloads: 580,

@@ -490,9 +490,6 @@ function initCounterAnimation() {
 }
 
 
-
-
-
 function isElementInViewport(el) {
     if (!el) return false;
     const rect = el.getBoundingClientRect();
