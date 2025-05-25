@@ -1377,22 +1377,47 @@ canvas {
     line-height: 1.6;
 }
 
+
+/* Nuclear Option - Guaranteed Horizontal Layout */
 .sidebar-features {
     margin-top: 30px;
+    width: 100%;
+}
+
+.feature-scroll-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.feature-row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    min-width: 100%;
+    gap: 15px;
+    padding: 0 5px;
 }
 
 .feature {
-    display: flex;
+    display: inline-flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    color: var(--dark);
+    min-width: 70px;
+    flex-shrink: 0;
 }
 
 .feature i {
     color: var(--secondary);
     font-size: 1.2rem;
 }
+
+.feature span {
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
 
 /* Countdown Timer Styles */
 .countdown-container {
@@ -1576,6 +1601,21 @@ canvas {
     .social-section {
         padding: 60px 15px;
     }
+     .feature-row {
+        gap: 10px;
+    }
+    
+    .feature {
+        padding: 5px;
+    }
+    
+    .feature i {
+        font-size: 1rem;
+    }
+    
+    .feature span {
+        font-size: 0.7rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1698,6 +1738,21 @@ canvas {
     .sidebar {
         width: 280px;
     }
+     .feature-row {
+        gap: 10px;
+    }
+    
+    .feature {
+        min-width: 60px;
+    }
+    
+    .feature i {
+        font-size: 1rem;
+    }
+    
+    .feature span {
+        font-size: 0.7rem;
+    }
 
     .social-container {
         gap: 15px;
@@ -1734,6 +1789,20 @@ canvas {
         margin-top: 120px;
     }
 }
+
+
+/* For very small screens where horizontal might not fit */
+@media (max-width: 350px) {
+    .feature span {
+        font-size: 0.7rem;
+    }
+    
+    .feature i {
+        font-size: 0.9rem;
+    }
+}
+
+
 
 @media (max-width: 320px) {
     /* Hero section adjustments */
