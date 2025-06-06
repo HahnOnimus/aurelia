@@ -403,8 +403,8 @@ function showWelcomeModal() {
 
 function closeWelcomeModal() {
     // Play chime sound
-    const confettiSound = document.getElementById('confetti-sound');
-    confettiSound.play().catch(e => console.log("Sound playback prevented:", e));
+    //const confettiSound = document.getElementById('confetti-sound');
+    //confettiSound.play().catch(e => console.log("Sound playback prevented:", e));
     
     // Trigger confetti
     confetti({
