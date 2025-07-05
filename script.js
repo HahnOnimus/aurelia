@@ -29,11 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
-
-
-
 function setupEventListeners() {
     // Search functionality
     document.getElementById('search').addEventListener('input', (e) => {
@@ -268,7 +263,7 @@ function toggleSidebar() {
 // Countdown timer
 function startCountdown() {
     const currentYear = new Date().getFullYear();
-    const countDownDate = new Date(currentYear, 6, 5); 
+    const countDownDate = new Date(currentYear, 8, 5); 
     
     if (countDownDate < new Date()) {
         countDownDate.setFullYear(currentYear + 1);
