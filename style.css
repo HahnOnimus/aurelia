@@ -481,6 +481,14 @@ canvas {
     color: var(--primary);
     font-weight: 600;
 }
+.trust-message-main { 
+    font-size: 0.4rem;
+    color: #000;
+    margin-top: 10px;
+    text-decoration: underline;
+    font-weight: 200;
+}
+
 
 
 /* Powered by section styles */
@@ -1229,7 +1237,7 @@ canvas {
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     width: 60px;
     height: 60px;
     background: #25D366;
@@ -1249,6 +1257,8 @@ canvas {
     transform: scale(1.1);
     box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
 }
+
+
 /* Header Styles */
 .main-header {
     position: fixed;

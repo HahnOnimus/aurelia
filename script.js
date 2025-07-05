@@ -41,112 +41,7 @@ function setupEventListeners() {
     });
 
 
-    // Add to setupEventListeners function
-    document.querySelector('.up-indicator').addEventListener('click', toggleTestimonialSheet);
-    document.querySelector('.close-testimonial-sheet').addEventListener('click', toggleTestimonialSheet);
-    document.querySelector('.testimonial-sheet').addEventListener('click', function(e) {
-        if (e.target === this) toggleTestimonialSheet();
-    });
-
-    // Add swipe functionality
-let startY;
-const testimonialSheet = document.querySelector('.testimonial-sheet');
-testimonialSheet.addEventListener('touchstart', (e) => {
-    startY = e.touches[0].clientY;
-}, {passive: true});
-
-    testimonialSheet.addEventListener('touchmove', (e) => {
-        if (!startY) return;
-            const y = e.touches[0].clientY;
-            const diff = y - startY;
-        if (diff > 50) { // Swipe down
-            toggleTestimonialSheet();
-            startY = null;
-        }
-    }, {passive: true});
-
-    // Add this new function
-function toggleTestimonialSheet() {
-    const sheet = document.querySelector('.testimonial-sheet');
-    sheet.classList.toggle('active');
-    document.body.style.overflow = sheet.classList.contains('active') ? 'hidden' : 'auto';
     
-    // Load testimonials when sheet opens
-    if (sheet.classList.contains('active')) {
-        loadTestimonials();
-    }
-}
-
-
-// Testimonials data and rendering
-function loadTestimonials() {
-    const testimonials = [
-        {
-            name: "Emmanuel T.",
-            role: "Plot 45, Aminu Kano Crescent, Wuse 2, Abuja, Nigeria",
-            text: "The Premium Business Package saved my business! Our online bookings tripled in a month. 10/10!",
-            rating: 5,
-            avatar: "images/test-1.png" // Replace with your image path
-        },
-        {
-            name: "Bryan Philips",
-            role: "2410 Maple Ave, Dallas, TX 75201",
-            text: "I run 3 eCommerce stores, and the SalesPro Package streamlined everything. Worth every penny!",
-            rating: 4,
-            avatar: "images/test-2.jpeg" // Replace with your image path
-        },
-        {
-            name: "Leila K.",
-            role: "728 Elm St, Columbus, OH 43215",
-            text: "EstateLux Suite cut my paperwork by 80%. Tenant onboarding now takes 10 minutes instead of 2 days. My team calls it ‘magic software’—no joke!",
-            rating: 5,  
-            avatar: "images/test-3.jpeg" // Replace with your image path
-        },
-        {
-            name: "Ajoke Biola",
-            role: " Badore Ferry Terminal, Badore, Ajah, Lagos, Nigeria",
-            text: "SwiftFlow Network Package is FIRE! Closed 12 high-ticket clients in 3 weeks using the complementary tools provided!",
-            rating: 5,
-            avatar: "images/test-4.jpg" // Replace with your image path
-        },
-        {
-            name: "Mitchell Rose.",
-            role: "Granville Island, Vancouver, British Columbia, Canada.",
-            text: "With the StockMaster Management System, our warehouses are now more efficiently monitored!",
-            rating: 4,
-            avatar: "images/test-5.jpeg" // Replace with your image path
-        }
-    ];
-
-    const container = document.querySelector('.testimonials-container');
-    container.innerHTML = '';
-
-    testimonials.forEach(testimonial => {
-        const card = document.createElement('div');
-        card.className = 'testimonial-card';
-        
-        // Generate star rating
-        let stars = '';
-        for (let i = 0; i < 5; i++) {
-            stars += i < testimonial.rating ? '★' : '☆';
-        }
-        
-        card.innerHTML = `
-            <div class="testimonial-user">
-                <img src="${testimonial.avatar}" alt="${testimonial.name}" class="testimonial-avatar">
-                <div class="testimonial-user-info">
-                    <h4>${testimonial.name}</h4>
-                    <p>${testimonial.role}</p>
-                </div>
-            </div>
-            <div class="testimonial-text">${testimonial.text}</div>
-            <div class="testimonial-rating" aria-label="${testimonial.rating} out of 5 stars">${stars}</div>
-        `;
-        
-        container.appendChild(card);
-    });
-}
-
 
       // Handle very small screens
     if (window.innerWidth <= 320) {
@@ -161,8 +56,7 @@ function loadTestimonials() {
         month: 'long', 
         day: 'numeric' 
     });
-    document.getElementById('current-date').textContent = formattedDate;
-
+    
     // Sidebar event listeners
     document.querySelector('.sidebar-toggle').addEventListener('click', toggleSidebar);
     document.querySelector('.sidebar-close').addEventListener('click', toggleSidebar);
@@ -180,23 +74,6 @@ function loadTestimonials() {
     });
 
 
-    // Add this inside the setupEventListeners() function
-    document.getElementById('agree-btn').addEventListener('click', () => {
-        document.getElementById('terms-modal').style.display = 'none';
-        document.body.style.overflow = 'auto';
-    });
-
-    // Terms modal events
-    document.querySelector('.terms-float').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.getElementById('terms-modal').style.display = 'block';
-        document.body.style.overflow = 'hidden';
-    });
-    
-    document.querySelector('#terms-modal .close-btn').addEventListener('click', () => {
-        document.getElementById('terms-modal').style.display = 'none';
-        document.body.style.overflow = 'auto';
-    });
 }
 
 // Product rendering with new card design
@@ -493,6 +370,7 @@ function isElementInViewport(el) {
         rect.bottom >= 0
     );
 }
+
 
 // Handle window resize
 window.addEventListener('resize', () => {

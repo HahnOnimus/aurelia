@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia - Terms and Conditions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="stylesheet" href="product-details.css">
+    <style>
+        :root {
+            --primary: #f57c00;
+            --primary-dark: #e65100;
+            --secondary: #d4af37;
+            --dark: #2c2c2c;
+            --light: #f5f5f5;
+            --gray: #777;
+            --white: #ffffff;
+            --black: #000000;
+            --warning: #ff5252;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            padding: 80px 20px 20px;
+        }
+
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            margin: 30px 0 15px;
+            font-size: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: var(--dark);
+            margin: 25px 0 10px;
+            font-size: 1.2rem;
+        }
+
+        p, li {
+            color: var(--gray);
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .warning-box {
+            background-color: #fff8f8;
+            border-left: 4px solid var(--warning);
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .warning-box h3 {
+            color: var(--warning);
+        }
+
+        .highlight {
+            background-color: #fffae6;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .last-updated {
+            text-align: right;
+            font-style: italic;
+            color: var(--gray);
+            margin-bottom: 30px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: var(--primary-dark);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Aurelia Logo" class="logo">
+            <span class="logo-text">Aurelia</span>
+        </div>
+        <div>
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-arrow-left"></i> back
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1><i class="fas fa-file-contract"></i> Terms and Conditions</h1>
+        <p class="last-updated">Last Updated: <span id="current-date"></span></p>
+
+        <div class="warning-box">
+            <h3><i class="fas fa-exclamation-triangle"></i> IMPORTANT NOTICE</h3>
+            <p>By purchasing any product from Aurelia, you acknowledge that you have read, understood, and agreed to be bound by these Terms and Conditions in their entirety. These terms constitute a legally binding agreement between you and Aurelia.</p>
+        </div>
+
+        <h2>1. Final Sale Policy</h2>
+        <p>All digital products sold through Aurelia are considered <span class="highlight">final sales</span>. No refunds, returns, exchanges, or cancellations will be permitted under any circumstances, including but not limited to:</p>
+        <ul>
+            <li>Customer dissatisfaction with product features or performance</li>
+            <li>Compatibility issues with your hardware, software, or systems</li>
+            <li>Change of mind after purchase</li>
+            <li>Errors in purchase made by the customer</li>
+            <li>Failure to read product descriptions or requirements before purchase</li>
+            <li>Inability to use the product for any reason</li>
+        </ul>
+        <p>By completing a purchase, you expressly waive any right to chargebacks or payment disputes through your payment provider.</p>
+
+        <h2>2. Product Delivery</h2>
+        <p>Upon confirmation of payment:</p>
+        <ul>
+            <li>Digital products will be delivered within <span class="highlight">3 working days</span> via the delivery method specified in the product description</li>
+            <li>In rare cases involving technical difficulties, delivery may take up to <span class="highlight">7 working days.</span> This delay does NOT entitle you to a refund but rather extends the delivery timeframe which would be communicated to you.</li>
+            <li>You are responsible for providing accurate delivery information and ensuring your systems meet all requirements</li>
+        </ul>
+        <p>Failure to receive delivery due to incorrect information provided by you does not entitle you to a refund.</p>
+
+        <div class="warning-box">
+            <h3><i class="fas fa-shield-alt"></i> No Warranty Disclaimer</h3>
+            <p>All products are provided <span class="highlight">"AS IS"</span> without any warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+        </div>
+
+        <h2>3. License & Usage</h2>
+        <p>All products are licensed, not sold. Your purchase grants you:</p>
+        <ul>
+            <li>A non-exclusive, non-transferable license to use the product</li>
+            <li>No ownership rights to the product or its intellectual property</li>
+            <li>No right to redistribute, resell, or transfer the product</li>
+        </ul>
+        <p>Any unauthorized use, distribution, or modification of our products will result in immediate termination of your license and may subject you to legal action.</p>
+
+        <h2>4. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, Aurelia shall not be liable for any:</p>
+        <ul>
+            <li>Direct, indirect, incidental, special, consequential, or exemplary damages</li>
+            <li>Loss of profits, data, business, or goodwill</li>
+            <li>Service interruptions or system failures</li>
+            <li>Damages resulting from use or inability to use our products</li>
+        </ul>
+        <p>In no event shall Aurelia's total liability exceed the amount you paid for the specific product giving rise to the claim.</p>
+
+        <h2>5. Prohibited Uses</h2>
+        <p>You agree not to use our products for any:</p>
+        <ul>
+            <li>Illegal activities or purposes</li>
+            <li>Fraudulent or deceptive practices</li>
+            <li>Violation of third-party rights</li>
+            <li>Spam or unauthorized marketing</li>
+            <li>Malicious or harmful purposes</li>
+        </ul>
+
+        <h2>6. Governing Law</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of Nigeria, without regard to its conflict of law provisions. Any disputes shall be resolved exclusively in the courts of Lagos State, Nigeria.</p>
+
+        <h2>7. Changes to Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. Changes become effective immediately upon posting. Your continued use of our products constitutes acceptance of the modified Terms.</p>
+
+        <h2>8. Contact Information</h2>
+        <p>For questions about these Terms, contact us at:</p>
+        <p>
+            <strong>Email:</strong> support@aurelia.com<br>
+            <strong>Phone:</strong> +234 810 032 2782<br>
+            <strong>Address:</strong> Upbeat Recreation Center, Lekki Phase 1, Lagos, Nigeria
+        </p>
+
+    
+    </div>
+
+    <script>
+        // Set current date
+        const currentDate = new Date();
+        const formattedDate = currentDate.toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+        document.getElementById('current-date').textContent = formattedDate;
+    </script>
+</body>
+</html>
